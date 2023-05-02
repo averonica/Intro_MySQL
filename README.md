@@ -1,0 +1,34 @@
+# Intro_MySQL
+Introduccion a MySQL y base de datos
+
+# Intro_MySQL
+Introduccion a MySQL y base de datos
+
+/* Crea la base de datos*/
+CREATE DATABASE CURSO;
+/*Llama a la base de datos*/
+USE CURSO;
+/*Muestra todas las base de datos*/
+SHOW DATABASES; 
+/*Elimina la base de datos*/
+DROP database CURSO;  
+
+CREATE DATABASE CURSO;
+USE CURSO; 
+/* Crea una tabla en CURSO*/
+CREATE TABLE CONTACTOS (
+  ID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, #NO PUEDE HABER 2 CONTACTOS
+  APELLIDO VARCHAR(25) NOT NULL,
+  NOMBRE VARCHAR(20) NOT NULL,
+  FECHA_NAC DATE,
+  DNI INT UNSIGNED UNIQUE); #NO SE PUEDE REPETIR
+  
+  SHOW DATABASES;
+  DESC CONTACTOS;
+  /*Agrega columnas en la tabla*/
+  ALTER TABLE CONTACTOS (
+  ADD OBSERVACIONES VARCHAR(100),
+  ADD TELEFONO VARCHAR(10) NOT NULL;
+  DESC CONTACTOS;
+  
+  CHANGE OBSERVACIONES 
